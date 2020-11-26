@@ -3,7 +3,7 @@
   const log = console.log;
   log(chalk.blue.bold('                  WELCOME TO THE QUIZ'));
   var userName = readlineSync.question("May i have your name please? ");
-  log(chalk.yellow.bold('HEY ')+userName+ chalk.yellow(' Please play the fun quiz.This is level 0. If you score 4 out of 5 or more than that in level 0 then you will qualify for level 1 else you will disqualify. If you score 9 out of 10 in level 1 or more than that you will be winner. Thanks' ));
+  log(chalk.yellow.bold('HEY ')+userName.toUpperCase()+ chalk.yellow(' Please play the fun quiz.This is level 0. If you score 4 out of 5 or more than that in level 0 then you will qualify for level 1 else you will disqualify. If you score 9 out of 10 in level 1 or more than that you will be winner. Thanks' ));
   var score=0;
   function play(question, answer){
     var userAnswer = readlineSync.question(question);
