@@ -64,7 +64,7 @@
   log(chalk.bold.blue("Hey! Thanks for playing. You scored:"+score+ " out of 5"));
 
   if(score>=4){
-  log(chalk.bold.blue("Congratulations! You made it. You qualified for level 1"));
+  log(chalk.bgYellow("Congratulations! You made it. You qualified for level 1"));
   log(chalk.bold.blue("WELCOME TO LEVEL 1"));
   
   function play(question, answer){
@@ -122,7 +122,7 @@
   }
   log(chalk.bold.blue("Hey! Thanks for playing. You scored:"+score+ " out of 10"));
   if(score>=9){
-    log(chalk.bold.blue("Congratulations! Once again you made it. You are winner! Hurray"));
+    log(chalk.bgYellow("Congratulations! Once again you made it. You are winner! Hurray"));
   }
   else{
     log(chalk.bold.red("Sorry! Please try again for level one"));
